@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ArchPlanReview</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <section class="hero">
+      <p class="eyebrow">Local-first architectural plan search</p>
+      <h1>ArchPlanReview</h1>
+      <p>Upload plan PDFs, extract sheet text, and search room names, notes, dimensions, sheet references, and construction keywords.</p>
+    </section>
+
+    <section class="card grid">
+      <div>
+        <h2>1. Upload plans</h2>
+        <form id="upload-form">
+          <input id="file" name="file" type="file" accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff" required />
+          <button type="submit">Upload & Index</button>
+        </form>
+        <p id="upload-status" class="status"></p>
+      </div>
+      <div>
+        <h2>2. Search</h2>
+        <form id="search-form">
+          <input id="query" type="search" placeholder="mechanical room, ADA, A-101, sprinkler..." required />
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="layout">
+      <div class="card">
+        <h2>Indexed Documents</h2>
+        <ul id="documents" class="documents"></ul>
+      </div>
+      <div class="card">
+        <h2>Results</h2>
+        <div id="results" class="results empty">Search results will appear here.</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Page Text</h2>
+      <pre id="page-text">Click a result to view extracted page text.</pre>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
