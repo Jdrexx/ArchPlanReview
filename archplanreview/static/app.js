@@ -63,7 +63,7 @@ function renderResults(results) {
   for (const hit of results) {
     const div = document.createElement('div');
     div.className = 'hit';
-    div.innerHTML = `<strong>${escapeHtml(hit.filename)}</strong> — page ${hit.page_number}<p>${hit.snippet.replaceAll('[', '<span class="hl">').replaceAll(']', '</span>')}</p>`;
+    div.innerHTML = `<strong>${escapeHtml(hit.filename)}</strong> — page ${hit.page_number}<p>${escapeHtml(hit.snippet).replaceAll('[', '<span class="hl">').replaceAll(']', '</span>')}</p>`;
     const button = document.createElement('button');
     button.textContent = 'View extracted page text';
     button.addEventListener('click', () => loadPage(hit.document_id, hit.page_number));

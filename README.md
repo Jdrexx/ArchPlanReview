@@ -4,6 +4,8 @@
 
 ArchPlanReview is a local-first web app for searching architectural plan sets. Upload PDFs or image sheets, index extracted text, then search for rooms, notes, dimensions, sheet references, accessibility terms, fire/life-safety notes, and construction keywords.
 
+![archplanreview-demo](screenshots/archplanreview-demo.png)
+
 ## Features
 
 - Upload PDF, PNG, JPG, or TIFF plan files
