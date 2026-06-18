@@ -1,5 +1,7 @@
 # ArchPlanReview
 
+![Python](https://img.shields.io/badge/Python-3.11+-blue?style=flat-square&logo=python) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi) ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=flat-square&logo=sqlite) ![PyMuPDF](https://img.shields.io/badge/PyMuPDF-FF6F00?style=flat-square&logo=pdf) ![FTS5](https://img.shields.io/badge/FTS5-4A90D9?style=flat-square&logo=search) ![PDF](https://img.shields.io/badge/PDF-EC1C24?style=flat-square&logo=pdf)
+
 ArchPlanReview is a local-first web app for searching architectural plan sets. Upload PDFs or image sheets, index extracted text, then search for rooms, notes, dimensions, sheet references, accessibility terms, fire/life-safety notes, and construction keywords.
 
 ## Features
